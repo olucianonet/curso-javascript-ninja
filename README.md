@@ -14,6 +14,8 @@
 
 Conteúdo estudado:
 
-- [01 - Variáveis de tipos de dados]()
+- [01. Variáveis de tipos de dados]()
+- [02. Operadores, estrutura e condicionais]()
 
+ 
 Aproveite o curso! :D
