@@ -28,7 +28,7 @@ var pessoa = {
     peso: 70.0,
     andando: false,
     caminhouQuantosMetros: 0,
-} 
+}; 
 ```
 
 - Adicione um método ao objeto `pessoa` chamado `fazerAniversario`. O método deve
@@ -38,7 +38,7 @@ for chamado.
 ```js
 pessoa.fazerAniversario = function () {
     pessoa.idade++;
-}
+};
 ```
 
 - Adicione um método ao objeto `pessoa` chamado `andar`, que terá as seguintes
@@ -54,7 +54,7 @@ booleano que representa "verdadeiro";
 pessoa.andar = function(metros) {
     pessoa.caminhouQuantosMetros += metros;
     pessoa.andando = true;
-}
+};
 ```
 
 - Adicione um método ao objeto `pessoa` chamado `parar`, que irá modificar o valor
@@ -63,15 +63,15 @@ da propriedade `andando` para o valor booleano que representa "falso".
 ```js
 pessoa.parar = function(){
     pessoa.andando = false;
-}
+};
 ```
 - Crie um método chamado `nomeCompleto`, que retorne a frase:
     - "Olá! Meu nome é [NOME] [SOBRENOME]!"
 
 ```js
 pessoa.nomeCompleto = function(){
-    return 'Olá! Meu nome é ' + pessoa.nome + ' ' + pessoa.sobreNome + '!';
-}
+    return 'Olá! Meu nome é ' + pessoa.nome + ' ' + pessoa.sobrenome + '!';
+};
 ```
 
 - Crie um método chamado `mostrarIdade`, que retorne a frase:
@@ -80,7 +80,7 @@ pessoa.nomeCompleto = function(){
 ```js
 pessoa.mostrarIdade = function(){
     return 'Olá, eu tenho ' + pessoa.idade + ' anos!';
-}
+};
 ```
 
 - Crie um método chamado `mostrarPeso`, que retorne a frase:
@@ -89,17 +89,16 @@ pessoa.mostrarIdade = function(){
 ```js
 pessoa.mostrarPeso = function(){
     return 'Eu peso ' + pessoa.peso + 'Kg.';
-}
+};
 ```
 
 - Crie um método chamado `mostrarAltura` que retorne a frase:
     - "Minha altura é [ALTURA]m."
 
 ```js
-pessoa.mostrarAltura() {
+pessoa.mostrarAltura = function() {
     return 'Minha altura é ' + pessoa.altura + 'm.';
-}
-
+};
 ```
 
 - Agora vamos brincar um pouco com o objeto criado:
@@ -124,7 +123,7 @@ inline ao lado da instrução para mostrar qual foi a resposta retornada)
 
 ```js
 pessoa.mostrarPeso();
-Eu peso 70Kg.'
+Eu peso 70Kg.
 ```
 
 - Qual a altura da pessoa? (Use a instrução para responder e comentários
@@ -218,7 +217,7 @@ pessoa.apresentacao = function() {
     message += ' Kg e, só hoje, eu já caminhei '  + pessoa.caminhouQuantosMetros;        
 	if (pessoa.caminhouQuantosMetros > 1) {message += ' metros!'} else {message += ' metro!'};    
     return message;
-}
+};
 
 ```
 
