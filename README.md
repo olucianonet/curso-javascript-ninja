@@ -52,14 +52,11 @@ os números pares entre 10 e 20, inclusive esses 2.
 ```js
 console.log( 'Números pares entre 10 e 20:' );
 
-var showEvenNumbers = function(min, max){
-    
+var showEvenNumbers = function(min, max){    
     while(min <= max){
-
         !(min % 2) ? console.log(min) : null;
         min++;
     }
-
 };
 
 showEvenNumbers(10, 20);
@@ -90,15 +87,11 @@ showOddNumbers(10, 20);
 
 ```js
 console.log( 'Números pares entre 100 e 120:' );
-var showEvenNumbers = function(min, max){
-    
-    for ( ;min <= max; min++ )
-    while(min <= max){
-
+var showEvenNumbers = function(min, max){    
+    for ( ;min <= max; min++ ){
         !(min % 2) ? console.log(min) : null;
         min++;
     }
-
 };
 
 showEvenNumbers(100, 120);
@@ -107,15 +100,11 @@ showEvenNumbers(100, 120);
 ```js
 console.log( 'Números ímpares entre 111 e 125:' );
 
-var showOddNumbers = function(min, max){
-    
-    for ( ;min <= max; min++ )
-    while(min <= max){
-
+var showOddNumbers = function(min, max){    
+    for ( ;min <= max; min++ ) {   
         min % 2 ? console.log(min) : null;
         min++;
     }
-
 };
 
 showOddNumbers(111, 125);
