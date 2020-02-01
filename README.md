@@ -11,3 +11,4 @@ Notas de estudo do [Curso JavaScript Ninja - Fernando Daciuk](http://blog.da2k.c
 - [05. Arrays em funções](https://github.com/olucianonet/curso-javascript-ninja/tree/05-arrays-em-funcoes)
 - [06. Operador vírgula e switch](https://github.com/olucianonet/curso-javascript-ninja/tree/06-operador-virgula-e-switch)
 - [07. Operador módulo e array](https://github.com/olucianonet/curso-javascript-ninja/tree/07-operador-modulo-e-arrays)
+- [08. Functional programming](https://github.com/olucianonet/curso-javascript-ninja/tree/08-functional-programming)
