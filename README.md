@@ -40,9 +40,7 @@ console.log(showName());
 8.5. Declare uma variável chamada `varShowName` que recebe a função criada acima.
 
 ```js
-var varShowName = function showName(){
-	return 'Luciano Cunha';
-};
+var varShowName = showName;
 ```
 
 8.6. Usando a variável criada acima, mostre no console o nome e o retorno da função atribuída a ela, com a seguinte frase:
@@ -78,7 +76,6 @@ function calculator(oper){
 				return message + `${a / b}.`;
 			case '%':
 				return message + `${a % b}.`;
-
 			default: 
 				return 'Operação inválida.';
 		}
