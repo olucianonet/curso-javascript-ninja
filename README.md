@@ -2,9 +2,7 @@
 
 ## Exercícios
 
-- Nesse exercício, você está livre para escolher os nomes para suas variáveis e funções!
-
--  Crie uma função que receba dois argumentos e retorne a soma dos mesmos.
+2.1. Crie uma função que receba dois argumentos e retorne a soma dos mesmos.
 
 ```js
 function soma(n1, n2){
@@ -12,26 +10,25 @@ function soma(n1, n2){
 }
 ```
 
--  Declare uma variável que receba a invocação da função criada acima, passando dois números quaisquer por argumento, e somando `5` ao resultado retornado da função.
+2.2. Declare uma variável que receba a invocação da função criada acima, passando dois números quaisquer por argumento, e somando `5` ao resultado retornado da função.
 
 ```js
 f = soma(2, 2) + 5;
 ```
 
-- Qual o valor atualizado dessa variável?
+2.3. Qual o valor atualizado dessa variável?
 
 ```js
 // 9
 ```
 
-- Declare uma nova variável, sem valor.
+2.4. Declare uma nova variável, sem valor.
 
 ```js
 var sem_valor;
 ```
 
-
-- Crie uma função que adicione um valor à variável criada acima, e retorne a string:
+2.5. Crie uma função que adicione um valor à variável criada acima, e retorne a string:
     - O valor da variável agora é VALOR.
     - Onde VALOR é o novo valor da variável.
 
@@ -42,13 +39,13 @@ function getValue(){
 }
 ```
 
-- Invoque a função criada acima.
+2.6. Invoque a função criada acima.
 
 ```js
 get_value();
 ```
 
-- Qual o retorno da função? (Use comentários de bloco).
+2.7. Qual o retorno da função? (Use comentários de bloco).
 
 ```js
 /*
@@ -56,7 +53,7 @@ get_value();
 */
 ```
 
-- Crie uma função com as seguintes características:
+2.8. Crie uma função com as seguintes características:
     1. A função deve receber 3 argumentos;
     2. Se qualquer um dos três argumentos não estiverem preenchidos, a função deve retornar a string:
     Preencha todos os valores corretamente!
@@ -66,7 +63,7 @@ get_value();
 f = function (a,b,c){
     var result;
     if (a !== undefined || b !== undefined || c !== undefined){
-        result = 'Preencha todos os valores corretamente!;
+        result = 'Preencha todos os valores corretamente!';
     } else {
         result = (a * b * c) + 2;    
     }
@@ -74,32 +71,31 @@ f = function (a,b,c){
 }
 ```
 
-- Invoque a função criada acima, passando só dois números como argumento.
+2.9. Invoque a função criada acima, passando só dois números como argumento.
 
 ```js
 f(1,2);
 ```
 
-- Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-
+2.10. Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
 
 ```js
 Preencha todos os valores corretamente!
 ``` 
 
-- Agora invoque novamente a função criada acima, mas passando todos os três argumentos necessários.
+2.11. Agora invoque novamente a função criada acima, mas passando todos os três argumentos necessários.
 
 ```js
 f(1,2,3);
 ```
 
-- Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
+2.12. Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
 
 ```js
 // Retorno é igual a 6.
 ```
 
-- Crie uma função com as seguintes características:
+2.13. Crie uma função com as seguintes características:
     1. A função deve receber 3 argumentos.
     2. Se somente um argumento for passado, retorne o valor do argumento.
     3. Se dois argumentos forem passados, retorne a soma dos dois argumentos.
@@ -111,7 +107,7 @@ f(1,2,3);
 f = function (a,b,c){
     var result;
     if (a !== undefined && b === undefined && c === undefined){
-        result = 'Preencha todos os valores corretamente!;
+        result = 'Preencha todos os valores corretamente!';
     } else if (a !== undefined && b !== undefined && c === undefined){
         result = a + b;
     } else if (a !== undefined && b !== undefined && c !== undefined){
@@ -123,7 +119,8 @@ f = function (a,b,c){
 	
 ```  
 
-- Invoque a função acima utilizando todas as possibilidades (com nenhum argumento, com um, com dois e com três.) Coloque um comentário de linha ao lado da função com o resultado de cada invocação.
+2.14. Invoque a função acima utilizando todas as possibilidades (com nenhum argumento, com um, com dois e com três.) Coloque um comentário de linha ao lado da função com o resultado de cada invocação.
+
 ```js
 f(1); // 1
 f(1,2); // 3
