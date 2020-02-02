@@ -13,3 +13,4 @@ Notas de estudo do [Curso JavaScript Ninja - Fernando Daciuk](http://blog.da2k.c
 - [07. Operador módulo e array](https://github.com/olucianonet/curso-javascript-ninja/tree/07-operador-modulo-e-arrays)
 - [08. Functional programming](https://github.com/olucianonet/curso-javascript-ninja/tree/08-functional-programming)
 - [09. Escopo, hoisting e IIFE](https://github.com/olucianonet/curso-javascript-ninja/tree/09-escopo-hoisting-iife)
+- [10. Wrapper objects e typeof](https://github.com/olucianonet/curso-javascript-ninja/tree/10-wrapper-objects-e-typeof)
