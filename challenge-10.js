@@ -25,7 +25,7 @@
                         return operation[oper](num1, num2);
                     }
                     return false;
-                }
+                };
             }
             return false;
         }
@@ -47,69 +47,74 @@
 
         if (sum) {
             console.log(showOperationMessage(
-                operationSignal, number1, number2), sum(number1, number2)); 
+                operationSignal, number1, number2), 
+                sum(number1, number2)); 
         } else {
-            showErrorMessage(operationSignal);
+            console.log(showErrorMessage(operationSignal));
         }
 
         var number1 = 10;
         var number2 = 2;
         var operationSignal = '-';
-        var sum = calculator(operationSignal);
+        var subtraction = calculator(operationSignal);
 
-        if (sum) {
+        if (subtraction) {
             console.log(showOperationMessage(
-                operationSignal, number1, number2), sum(number1, number2)); 
+                operationSignal, number1, number2), 
+                subtraction(number1, number2)); 
         } else {
-            showOperationMessage(operationSignal);
+            console.log(showErrorMessage(operationSignal));
         }
 
-                        var number1 = 10;
+        var number1 = 10;
         var number2 = 2;
         var operationSignal = '*';
-        var sum = calculator(operationSignal);
+        var division = calculator(operationSignal);
 
-        if (sum) {
+        if (division) {
             console.log(showOperationMessage(
-                operationSignal, number1, number2), sum(number1, number2)); 
+                operationSignal, number1, number2), 
+                division(number1, number2)); 
         } else {
-            showOperationMessage(operationSignal);
+            console.log(showErrorMessage(operationSignal));
         }
 
         var number1 = 10;
         var number2 = 2;
         var operationSignal = '/';
-        var sum = calculator(operationSignal);
+        var multiplication = calculator(operationSignal);
 
-        if (sum) {
+        if (multiplication) {
             console.log(showOperationMessage(
-                operationSignal, number1, number2), sum(number1, number2)); 
+                operationSignal, number1, number2), 
+                multiplication(number1, number2)); 
         } else {
-            showOperationMessage(operationSignal);
+            console.log(showErrorMessage(operationSignal));
         }
         
         var number1 = 10;
         var number2 = 2;
         var operationSignal = '%';
-        var sum = calculator(operationSignal);
+        var mod = calculator(operationSignal);
 
-        if (sum) {
+        if (mod) {
             console.log(showOperationMessage(
-                operationSignal, number1, number2), sum(number1, number2)); 
+                operationSignal, number1, number2), mod(number1, number2)); 
         } else {
-            showOperationMessage(operationSignal);
+            console.log(showErrorMessage(operationSignal));
         }
 
         var number1 = 10;
         var number2 = 2;
         var operationSignal = 'q';
-        var sum = calculator(operationSignal);
+        var invalid = calculator(operationSignal);
 
-        if (sum) {
+        if (invalid) {
             console.log(showOperationMessage(
-                operationSignal, number1, number2), sum(number1, number2)); 
+                operationSignal, number1, number2), 
+                invalid(number1, number2)); 
         } else {
-            showOperationMessage(operationSignal);
+            console.log(showErrorMessage(operationSignal));
         }        
 
     }
