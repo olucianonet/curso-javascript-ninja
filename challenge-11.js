@@ -80,7 +80,4 @@
 	}
 
 	console.log(numbers);
-
-	// ?
-
 })();
