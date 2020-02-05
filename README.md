@@ -14,3 +14,4 @@ Notas de estudo do [Curso JavaScript Ninja - Fernando Daciuk](http://blog.da2k.c
 - [08. Functional programming](https://github.com/olucianonet/curso-javascript-ninja/tree/08-functional-programming)
 - [09. Escopo, hoisting e IIFE](https://github.com/olucianonet/curso-javascript-ninja/tree/09-escopo-hoisting-iife)
 - [10. Wrapper objects e typeof](https://github.com/olucianonet/curso-javascript-ninja/tree/10-wrapper-objects-e-typeof)
+- [11. Loops e saltos](https://github.com/olucianonet/curso-javascript-ninja/tree/11-loops-e-saltos)
