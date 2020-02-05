@@ -1,15 +1,13 @@
-// Envolva todo o código desse arquivo em uma IIFE (incluindo esse comentário).
+# 11. Loops e Saltos
 
-/*
-Crie uma variável chamada `once`, que recebe `false` como seu valor.
+## Exercícios
+
+11.1. Crie uma variável chamada `once`, que recebe `false` como seu valor.
 Crie um loop que execute enquanto essa variável for verdadeira. Dentro do
 loop, mostre no console a mensagem:
 'Entrou ao menos uma vez!'
 Qual loop você deve usar para que essa mensagem seja mostrada no console?
-*/
-// ?
 
-/*
 Crie um objeto chamado `person`, que receba as seguintes propriedades:
 - 'name', 'age', 'weight' e 'birthday'. Preencha com os valores corretos
 para o nome, idade, peso e data de nascimento dessa pessoa.
