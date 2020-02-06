@@ -57,7 +57,7 @@
 	Remova o último livro, e mostre-o no console.
 	*/
 	// var livroRemovido = books.pop();
-	console.log(`Removendo o livro: ${books.pop().name}`);
+	console.log(`Removendo o livro: ${books.pop()}`);
 
 	console.log( '\nAgora sobraram somente os livros:' );
 	/*
