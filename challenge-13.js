@@ -23,7 +23,7 @@ var sudeste = ['são paulo', 'minas gerais', 'rio de janeiro', 'espirito santo']
 /*
 Crie uma variável chamada `brasil`, que irá receber as duas regiões
 concatenadas. Mostre o `brasil` no console.
-*/
+*/ 	
 
 console.log( '\nAlguns Estados do Brasil:' );
 var brasil = sul.concat(sudeste);
@@ -150,16 +150,9 @@ Senão, mostre no console:
 - "Nem todos os estados tem mais de 7 letras!"
 */
 
-var brasil = [
-	{id: 0, estado: 'santa catarina'},
-	{id: 0, estado: 'pernambuco'},
-	{id: 0, estado: 'maranhão'},
-]
-
 console.log( '\nTodos os estados de `brasil` tem mais de 7 letras?' );
 var e = brasil.every(function(item){	
-	console.log(item, item.length);
-	return item.estado.length > 7;
+	return item.length > 7;
 });
 
 console.log(
