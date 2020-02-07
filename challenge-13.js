@@ -82,8 +82,6 @@ Mostre no console os estados do nordeste.
 console.log( '\nEstados do Nordeste:' );
 console.log(nordeste);
 
-// ?
-
 /*
 Remova de `brasil` os estados do `sudeste`, colocando-os em uma variável
 chamada `newSudeste`.
@@ -93,7 +91,7 @@ console.log( '\nEstados do Brasil:' );
 console.log(brasil);
 
 console.log( '\nEstados do Sudeste:' );
-var newSudeste = brasil.splice(5,10);
+var newSudeste = brasil.splice(5,5);
 console.log(newSudeste);
 
 console.log( '\nEstados do Brasil:' );
@@ -131,7 +129,10 @@ propriedades:
 console.log( '\nPercorrendo o array com foreach:' );
 var newBrasil = [];
 brasil.forEach(function(item, index){	
-	newBrasil.push({[index]: item});
+	newBrasil.push({
+		id: index,
+		estado: item
+	});
 });
 
 /*
@@ -149,10 +150,23 @@ Senão, mostre no console:
 - "Nem todos os estados tem mais de 7 letras!"
 */
 
+var brasil = [
+	{id: 0, estado: 'santa catarina'},
+	{id: 0, estado: 'pernambuco'},
+	{id: 0, estado: 'maranhão'},
+]
+
 console.log( '\nTodos os estados de `brasil` tem mais de 7 letras?' );
-var e = brasil.every(function(item){return item.length > 7;})
-console.log(`${e ? "Sim, todos os estados tem mais de 7 letras!" : 
-	"Nem todos os estados tem mais de 7 letras!"}`);
+var e = brasil.every(function(item){	
+	console.log(item, item.length);
+	return item.estado.length > 7;
+});
+
+console.log(
+	`${e 
+	? "Sim, todos os estados tem mais de 7 letras!" 
+	: "Nem todos os estados tem mais de 7 letras!"}`
+);
 
 /*
 Percorra o array `brasil` e verifique se o Ceará está incluído, atribuindo o
@@ -165,7 +179,7 @@ Senão, mostrar a frase:
 
 console.log( '\nCeará está incluído em `brasil`?' );
 var s = brasil.some(function(item){
-	return item == 'ceará';
+	return item === 'ceará';
 });
 console.log(`${s ? "Ceará está incluído!" : 
 	"Ceará não foi incluído :("}`);
@@ -177,28 +191,36 @@ objeto desse array, e adicione a frase abaixo na propriedade `estado`:
 Atribua o novo array a uma variável chamada `map`.
 */
 
-console.log('\n');
+// console.log('\n');
 
-var map = newBrasil.map(function(item, index, array){
-	console.log(item.key());
+var map = newBrasil.map(function(item, index){
+	return {
+		id: item.id + 1,
+		estado: item.estado + ' pertence ao Brasil'
+	}
 });
-
 
 /*
 Mostre no console o array criado acima:
 */
-//console.log( '\nnewBrasil agora com mais informações:' );
-// ?
+
+console.log( '\nnewBrasil agora com mais informações:' );
+console.log(map);
 
 /*
 Filtre o array criado acima, retornando somente os estados que tiverem
 ID par. Atribua o valor à uma variável chamada `filter`.
 */
-// ?
+
+var filter = map.filter(function(item, index){
+	return item.id % 2 === 0;
+});
 
 /*
 Mostre o array filtrado acima no console.
 */
-//console.log( '\nEstados com ID par:' );
-// ?
+
+console.log( '\nEstados com ID par:' );
+console.log(filter);
+
 })();
