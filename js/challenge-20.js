@@ -87,7 +87,6 @@ $button.addEventListener('click', function(event){
         message = 'Preencha a mensagem!'
     if (!isValidEmail($inputEmail.value))
         message = 'Entre com um e-mail válido!'
-
     if (message) {
         window.alert(message);
         event.preventDefault();
