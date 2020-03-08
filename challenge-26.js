@@ -1,3 +1,6 @@
+(function(window, document){
+    'use strict';
+
 /*
 O desafio dessa semana é criar uma mini library (biblioteca) para
 reutilizarmos nossos códigos quando fizermos manipulação de DOM!
@@ -19,7 +22,31 @@ selecionados.
 Dica: olhe os erros que acontecem no console, e vá resolvendo um a um.
 Só passe para o próximo problema quando tiver resolvido o anterior :)
 */
-// ?
+
+var addBg = function(){this.style.backgroundColor = "red";};
+var rmvBg = function(){this.style.backgroundColor = "white";};
+
+function DOM(node){
+    this.element = document.querySelectorAll(node);
+
+    this.on = function(){
+        for(var i = 0; i < this.element.length; i++){            
+            this.element[i].addEventListener("mouseover", addBg, true);
+            this.element[i].addEventListener("mouseleave", rmvBg, true);
+        }
+    };
+
+    this.off = function(){
+        for(var i = 0; i < this.element.length; i++){            
+            this.element[i].removeEventListener("mouseover", addBg);
+            this.element[i].removeEventListener("mouseleave", addBg);
+        }
+    };
+
+    this.get = function(){
+        return this.element;
+    };
+}
 
 var $a = new DOM('[data-js="link"]');
 $a.on('click', function(e) {
@@ -29,3 +56,5 @@ $a.on('click', function(e) {
 
 console.log('Elementos selecionados:', $a.get());
 console.log('$a é filho de body?', $a.get()[0].parentNode === document.body);
+
+})(window, document);

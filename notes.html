@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>Notes</title>
+  <style>
+    * {
+      font-family: Arial;
+    }
+    #main {
+      background-color: #555;
+      width: 100%;
+      height: 50px;
+      cursor: pointer;
+      padding: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="main">
+  </div>
+  <script>
+    var e = document.getElementById("main");
+    var p = document.createElement('p');
+    var t = document.createTextNode("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua.");
+    p.appendChild(t);
+    p.id = "text";
+    p.style.display = "none";
+    p.style.color = "white";
+    p.style.textAlign = "center";
+    
+    e.addEventListener('click', function(event){
+      if (p.style.display === "block") {
+        p.style.display = "none";
+        this.removeChild(p);
+      } else {
+        p.style.display = "block";
+        this.appendChild(p);
+      }
+    });
+  </script>
+</body>
+</html>
+
